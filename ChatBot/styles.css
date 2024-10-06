@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    
+}
+.chatbox {
+    /* existing styles */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(112, 86, 109, 0.5) transparent;
+}
+
+.chatbox::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chatbox::-webkit-scrollbar-track {
+    background: transparent; /* Track color */
+}
+
+.chatbox::-webkit-scrollbar-thumb {
+    background-color: #C8ACD6(rgba(112, 86, 109, 0.5));
+    border-radius: 10px;
+}
+
+.chatbox::-webkit-scrollbar-thumb:hover {
+    background-color: #C8ACD6(rgba(112, 86, 109, 0.8));
+}
+
+
+
+.chatbot-toggler {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #17153B;
+    color: #FFF7F7;
+    border: none;
+    padding: 15px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.chatbot {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 350px;
+    background: #C8ACD6;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #2E236C;
+    color: FFF7F7;
+    padding: 10px;
+    text-align: center;
+}
+
+.chatbox {
+    padding: 10px;
+    flex-grow: 1;
+    overflow-y: auto; 
+    max-height: 400px; 
+}
+
+.chat {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.chat.outgoing {
+    justify-content: flex-end;
+}
+
+.chat.incoming {
+    justify-content: flex-start;
+}
+
+.chat p {
+    margin: 0;
+    background: #433D8B;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.chat.outgoing p {
+    background: #433D8B;
+    color: FFF7F7;
+}
+
+.chat-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-top: 1px solid #FFF7F7;
+}
+
+.chat-input textarea {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+.chat-input span {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #17153B;
+}
+

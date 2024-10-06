@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realistic 3D Solar System Simulation</title>
+
+    <script type="text/javascript" src="./min.js/dat.gui.min.js"></script>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="change-scene">
+      <span>Realistic dimention</span>
+      <div class="change-scene-select selected"></div>
+    </div>
+    <div class="show-info-container" show="true">
+      <div class="hide-info">Hide info</div>
+      <div class="show-info">Show info</div>
+
+      <div class="info-value description"></div>
+      <div class="mul-info-key-value">
+        <div class="key-value-pair">
+          <div class="info-key">Radius</div>
+          :
+          <div class="info-value radius"></div>
+        </div>
+        <div class="key-value-pair">
+          <div class="info-key">Distance from sun</div>
+          :
+          <div class="info-value distanceFromSun"></div>
+        </div>
+        <div class="key-value-pair">
+          <div class="info-key">Mass</div>
+          :
+          <div class="info-value mass"></div>
+        </div>
+        <div class="key-value-pair">
+          <div class="info-key">Day length</div>
+          :
+          <div class="info-value dayLength"></div>
+        </div>
+        <div class="key-value-pair">
+          <div class="info-key">Year length</div>
+          :
+          <div class="info-value yearLength"></div>
+        </div>
+        <div class="key-value-pair">
+          <div class="info-key">Temperature</div>
+          :
+          <div class="info-value temperatureRange"></div>
+        </div>
+        <div class="key-value-pair">
+          <div class="info-key">No. of missions</div>
+          :
+          <div class="info-value missions"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js" type="module"></script>
+  </body>
+</html>
